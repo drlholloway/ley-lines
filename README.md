@@ -8,7 +8,7 @@ and answers to open questions. The site's code and data are kept elsewhere.
   a wrong date, maker, link or summary, or an answer to a record marked "needs review".
 - **[Suggest a pedal](https://github.com/drlholloway/ley-lines/issues/new?template=new-pedal.yml)**:
   a pedal, kit or layout the map is missing.
-- **[Open questions](https://leylines.cryptideffects.com/review.html)**: the records we're least
+- **[Open questions](https://leylines.cryptideffects.com/review)**: the records we're least
   sure of.
 
 ## What makes a suggestion usable
