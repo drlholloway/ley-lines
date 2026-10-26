@@ -1,0 +1,66 @@
+name: Correct a record
+description: Fix a date, maker, lineage link or summary, or answer a record marked "needs review".
+title: "Correction: "
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Every link on Ley Lines cites a source, so please include one.
+        Describe things in your own words rather than pasting text from other sites.
+  - type: input
+    id: record
+    attributes:
+      label: Record
+      description: The pedal, family or circuit block, as named on the site. The site's "Suggest a correction" link fills this in.
+      placeholder: "Pro Co Sound RAT2"
+    validations:
+      required: true
+  - type: input
+    id: record-id
+    attributes:
+      label: Ley Lines id
+      description: Filled in by the site's link; leave it blank if you don't know it.
+      placeholder: proco-rat2
+  - type: dropdown
+    id: what
+    attributes:
+      label: What needs changing?
+      multiple: true
+      options:
+        - Where it came from (a lineage link)
+        - Year or dates
+        - Maker or designer
+        - Summary or history
+        - Circuit blocks
+        - It belongs in a different family
+        - Answering a "needs review" question
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What's wrong, and what's right?
+      placeholder: "The site says 1979; the maker's catalog shows it first sold in 1978."
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link or citation (maker page, manual, schematic, article, build document, forum thread).
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: What kind of source is it?
+      options:
+        - The maker or designer says so
+        - Documented (manual, catalog, magazine, established reference)
+        - Traced (someone compared the circuits or schematics)
+        - Community knowledge (forums, common belief)
+        - Not sure
+    validations:
+      required: true

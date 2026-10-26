@@ -1,0 +1,72 @@
+name: Suggest a pedal
+description: Add a pedal, kit or layout the map is missing.
+title: "New pedal: "
+labels: [new-pedal]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ley Lines tracks which circuits came from which, so the most useful suggestions say what
+        a pedal is based on and where that's stated. Describe things in your own words rather
+        than pasting text from other sites.
+  - type: input
+    id: maker
+    attributes:
+      label: Maker
+      placeholder: "Electro-Harmonix"
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Pedal name and version
+      placeholder: "Big Muff Pi (Ram's Head)"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Production pedal
+        - Reissue
+        - Boutique pedal
+        - Kit or PCB
+        - DIY layout or schematic
+        - Prototype
+    validations:
+      required: true
+  - type: input
+    id: years
+    attributes:
+      label: Years made
+      placeholder: "1973-1977, or about 1980"
+  - type: textarea
+    id: based-on
+    attributes:
+      label: What is it based on?
+      description: The pedal or circuit it descends from, and how (clone, mod, reissue, inspired by...). Leave blank if it's an original design.
+      placeholder: "A clone of the 1970s Ram's Head with a tone-bypass switch."
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link or citation for the facts above (maker page, manual, schematic, article, build document, forum thread).
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: What kind of source is it?
+      options:
+        - The maker or designer says so
+        - Documented (manual, catalog, magazine, established reference)
+        - Traced (someone compared the circuits or schematics)
+        - Community knowledge (forums, common belief)
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
