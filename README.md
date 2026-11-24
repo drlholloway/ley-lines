@@ -19,3 +19,9 @@ the circuit. Say which it is; a maker's own statement counts for more than a for
 both are welcome.
 
 Please describe things in your own words rather than pasting text from other sites.
+
+## License
+
+Copyright © 2026 Cryptid Effects (Lane Holloway). What's in this repository is
+under the [GNU Affero General Public License, version 3 only](LICENSE)
+(AGPL-3.0-only); see [NOTICE](NOTICE).
